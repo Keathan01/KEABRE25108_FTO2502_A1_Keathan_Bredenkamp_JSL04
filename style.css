@@ -73,8 +73,22 @@ body {
   z-index: 999;
 }
 
-
-
+.hidden{
+  display: none;
+}
+/*modal content box*/
+.modal-content{
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width:90%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
 #side-heading {
   font-size: 12px;
