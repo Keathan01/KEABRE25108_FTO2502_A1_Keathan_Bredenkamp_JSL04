@@ -100,8 +100,18 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
+/* Textarea and inputs */
+.modal-content input,
+.modal-content textarea,
+.modal-content select{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  resize: none;
 
-
+}
 
 #side-heading {
   font-size: 12px;
