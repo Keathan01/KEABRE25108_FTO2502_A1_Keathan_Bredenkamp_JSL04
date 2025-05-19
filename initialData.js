@@ -100,3 +100,15 @@ saveBtn.addEventListener("click", () => {
   modal.classList.add("hidden");
   renderTasks();
 });
+// Handle add new task
+document.getElementById("add-task-btn").addEventListener("click", () => {
+  const newTask = {
+    id: Date.now(),
+    title: "New Task",
+    description: "Task description here...",
+    status: "todo",
+  };
+  tasks.push(newTask);
+  renderTasks();
+  openModal(newTask);
+});
