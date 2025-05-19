@@ -90,6 +90,19 @@ body {
   gap: 15px;
 }
 
+/* close btn */
+.close-modal{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
 #side-heading {
   font-size: 12px;
   font-weight: 700;
