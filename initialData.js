@@ -84,3 +84,8 @@ function openModal(task) {
   statusSelect.value = task.status;
   modal.classList.remove("hidden");
 }
+// Close modal
+closeModalBtn.addEventListener("click", () => {
+  modal.classList.add("hidden");
+  currentTask = null;
+});
