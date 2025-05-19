@@ -89,3 +89,14 @@ closeModalBtn.addEventListener("click", () => {
   modal.classList.add("hidden");
   currentTask = null;
 });
+// Save edits
+saveBtn.addEventListener("click", () => {
+  if (!currentTask) return;
+
+  currentTask.title = titleInput.value;
+  currentTask.description = descInput.value;
+  currentTask.status = statusSelect.value;
+
+  modal.classList.add("hidden");
+  renderTasks();
+});
