@@ -52,3 +52,28 @@ const titleInput = document.getElementById("modalTitle");
 const descInput = document.getElementById("modalDescription");
 const statusSelect = document.getElementById("modalStatus");
 const saveBtn = document.getElementById("saveTask");
+
+let currentTask = null;
+
+// Render tasks
+function renderTasks() {
+  todoColumn.innerHTML = "";
+  doingColumn.innerHTML = "";
+  doneColumn.innerHTML = "";
+
+  tasks.forEach((task) => {
+    const taskEl = document.createElement("div");
+    taskEl.classList.add("tasks");
+    taskEl.textContent = task.title;
+    taskEl.addEventListener("click", () => openModal(task));
+
+    if (task.status === "todo") {
+      todoColumn.appendChild(taskEl);
+    } else if (task.status === "doing") {
+      doingColumn.appendChild(taskEl);
+    } else if (task.status === "done") {
+      doneColumn.appendChild(taskEl);
+    }
+  });
+}
+
