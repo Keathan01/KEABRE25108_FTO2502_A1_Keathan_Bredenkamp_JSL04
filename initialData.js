@@ -112,3 +112,5 @@ document.getElementById("add-task-btn").addEventListener("click", () => {
   renderTasks();
   openModal(newTask);
 });
+// Initial render
+renderTasks();
