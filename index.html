@@ -71,6 +71,24 @@
         </main>
       </div>
     </div>
+    <!--Modal-->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <h2>Edit Task</h2>
+        <label>Title:</label>
+        <input type="text" id="modalTitle"/>
+        <label>Description</label>
+        <textarea id="modalDes" rows="4"></textarea>
+        <label>Status:</label>
+        <select id="modalStatus">
+          <option value="todo">To Do</option>
+          <option value="doing">Doing</option>
+          <option value="Done"></option>
+        </select>
+        <button id="saveTask">Save</button>
+      </div>
+      </div>
     <script src="initialData.js"></script>
   </body>
 </html>
