@@ -121,6 +121,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease;
+  width: 50%;
 }
 
 #saveTask:hover {
@@ -141,6 +142,36 @@ body {
 .mobile-btn {
   display: none;
 }
+.sav-del{
+  display: flex;
+  gap: 10px;
+}
+#deleteTask{
+  width: 50%;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#toggle-sidebar-btn{
+  .toggle-sidebar-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+}
+
+
+
+
+
 .desktop-btn {
   background-color: #635fc7;
   color: #ffff;
@@ -215,6 +246,11 @@ body {
   .heading {
     display: flex;
     flex-direction: row;
+  }
+  .sav-del{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
   .mobile-only {
     display: block;

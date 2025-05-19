@@ -100,6 +100,25 @@ saveBtn.addEventListener("click", () => {
   modal.classList.add("hidden");
   renderTasks();
 });
+
+const deleteBtn = document.getElementById("deleteTask");
+
+deleteBtn.addEventListener("click", () => {
+  if (!currentTask) return;
+
+  tasks = tasks.filter(task => task.id !== currentTask.id);
+  modal.classList.add("hidden");
+  currentTask = null;
+  renderTasks();
+});
+
+
+const sidebar = document.querySelector('.Sidebar');
+const toggleSidebarBtn = document.getElementById('toggle-sidebar-btn');
+
+toggleSidebarBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('hidden');
+});
 // Handle add new task
 document.getElementById("add-task-btn").addEventListener("click", () => {
   const newTask = {
