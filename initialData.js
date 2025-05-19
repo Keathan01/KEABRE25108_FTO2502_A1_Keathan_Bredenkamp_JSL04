@@ -76,4 +76,11 @@ function renderTasks() {
     }
   });
 }
-
+//open modal and populate fields
+function openModal(task) {
+  currentTask = task;
+  titleInput.value = task.title;
+  descInput.value = task.description;
+  statusSelect.value = task.status;
+  modal.classList.remove("hidden");
+}
