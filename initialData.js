@@ -45,3 +45,10 @@ let task=[...initialTasks];
 const todoColumn = document.getElementById("todo-column");
 const doingColumn=document.getElementById("doing-column");
 const doneColumn=document.getElementById("done-column");
+// Modal elements
+const modal = document.getElementById("taskModal");
+const closeModalBtn = document.querySelector(".close-modal");
+const titleInput = document.getElementById("modalTitle");
+const descInput = document.getElementById("modalDescription");
+const statusSelect = document.getElementById("modalStatus");
+const saveBtn = document.getElementById("saveTask");
