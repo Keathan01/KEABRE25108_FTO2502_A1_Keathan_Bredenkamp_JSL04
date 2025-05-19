@@ -40,16 +40,16 @@ const initialTasks = [
     status: "done",
   },
 ];
-let task=[...initialTasks];
+let tasks=[...initialTasks];
 //get containers
 const todoColumn = document.getElementById("todo-column");
 const doingColumn=document.getElementById("doing-column");
 const doneColumn=document.getElementById("done-column");
 // Modal elements
-const modal = document.getElementById("taskModal");
+const modal = document.getElementById("modal");
 const closeModalBtn = document.querySelector(".close-modal");
 const titleInput = document.getElementById("modalTitle");
-const descInput = document.getElementById("modalDescription");
+const descInput = document.getElementById("modalDes");
 const statusSelect = document.getElementById("modalStatus");
 const saveBtn = document.getElementById("saveTask");
 
