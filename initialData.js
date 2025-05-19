@@ -40,3 +40,8 @@ const initialTasks = [
     status: "done",
   },
 ];
+let task=[...initialTasks];
+//get containers
+const todoColumn = document.getElementById("todo-column");
+const doingColumn=document.getElementById("doing-column");
+const doneColumn=document.getElementById("done-column");
