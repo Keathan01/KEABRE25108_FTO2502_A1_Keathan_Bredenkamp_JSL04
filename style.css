@@ -43,6 +43,21 @@ body {
   margin-top: 20px;
   width: 150px;
 }
+.btn{
+  display: flex;
+  justify-content: space-between;
+}
+.add-task-btn{
+  background-color: #635fc7;
+   color: #ffff;
+   height: 20%;
+   margin-top: 15px;
+   border-radius: 20px;
+   font-size: 14px;
+   padding: 10px 20px;
+   margin-right: 20px;
+   border: none;
+}
 
 #side-heading {
   font-size: 12px;
