@@ -135,5 +135,3 @@ document.getElementById("add-task-btn").addEventListener("click", () => {
 renderTasks();
 
 
-let did=1;
-console.log(did);
